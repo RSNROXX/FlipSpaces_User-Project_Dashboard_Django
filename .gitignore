@@ -207,3 +207,7 @@ marimo/_lsp/
 __marimo__/
 
 myenv/
+
+
+# BACKUP FOLDER NOT TO BE INCLUDED IN GIT
+core/backup_v1

@@ -100,9 +100,6 @@ def _get_stage_querysets(view_mode, projects, start_dt, end_dt, roll_start, roll
     return qs_pre, qs_post
 
 def _get_dropdown_context(request):
-    """
-    Generates the context for all dropdown filters (Options list + Selected status).
-    """
     def get_opts(field):
         try:
             vals = Project.objects.values_list(field, flat=True).distinct()
